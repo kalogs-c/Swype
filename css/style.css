@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+}
+
+.header {
+    padding: 20px 0; 
+}
+
+.header div {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #FF3366;
+    text-decoration: underline;
+}
+
+.transform-div {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.transform-div h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: #FF3366;
+    font-size: 2rem;
+}
+
+.transform-div div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 110px;
+    grid-template-areas:
+        "text-area1"
+        "button" 
+    ;
+    gap: 25px;
+    justify-items: center;
+}
+
+.textarea1 {
+    grid-area: text-area1;
+}
+
+.textarea {
+    min-height: 300px;
+    min-width: 550px;
+    max-width: 900px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #F6F7F8;
+    border: 1px solid #EDAE49;
+    box-shadow: 3px 2px 1px #EDAE49;
+    font-size: 1.2rem;
+}
+
+.transform-div button {
+    grid-area: button;
+    width: 250px;
+    height: 60px;
+    justify-self: center;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #FF3366;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    box-shadow: 8.5px 8.5px 5px #EDAE49;
+    transition: 0.4s all ease;
+    margin-top: 25px;
+}
+
+.transform-div button:hover {
+    background-color: #EDAE49;
+    box-shadow: 0px 0px 2px #EDAE49;
+}
