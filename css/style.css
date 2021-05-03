@@ -12,6 +12,7 @@
 body {
     background-color: #FFFFFF;
     height: 100vh;
+    padding: 0 50px;
 }
 
 .header {
@@ -34,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    text-align: center;
 }
 
 .transform-div {
@@ -57,6 +59,7 @@ body {
     min-width: 550px;
     max-width: 900px;
     border-radius: 10px;
+    margin: 30px auto;
     padding: 20px;
     background-color: #F6F7F8;
     border: 1px solid #EDAE49;
@@ -67,8 +70,10 @@ body {
 .button-div {
     grid-area: button-div;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-width: 550px;
+    max-width: 900px;
 }
 
 button {
@@ -80,25 +85,25 @@ button {
     border-radius: 30px;
     color: #fff;
     background-color: #FF3366;
+    box-shadow: 8.5px 8.5px 5px #EDAE49;
     font-size: 1.6rem;
     font-weight: bolder;
     transition: 0.3s all ease;
-    margin: 15px;
 }
 
 .vertical-menu {
     grid-area: vertical-menu;
     overflow-y: auto;
-    width: 550px;
+    width: 250px;
+    height: 60px;
     z-index: -1;
     padding: 1rem;
-    border: none;
-    border-radius: 7px;
+    border-radius: 50px;
     color: #FF3366;
     background-color: #F6F7F8;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
     font-size: 1.4rem;
-    box-shadow: 8.5px 8.5px 5px #EDAE49;
-    transition: 0.4s all ease;
+    transition: 0.3s all ease;
     cursor: pointer;
 }
 
@@ -112,11 +117,14 @@ button {
 .dropdown-list {
     border-radius: 0 0 7px 7px;
     background-color: #F6F7F8;
-    width: 550px;
+    width: 250px;
+    height: 120px;
+    overflow-y: scroll;
     opacity: 0;
-    top: 500px;
+    margin-top: 0px;
     position: absolute;
     transition: all ease 0.3s;
+    cursor: pointer; 
 }
 
 .dropdown-list__item {
@@ -125,15 +133,16 @@ button {
     color: #FF3366;
 }
 
-.button-div:hover .dropdown-list {
+.vertical-menu__div:hover .dropdown-list {
     opacity: 1;
 }
 
-.button-div:hover .vertical-menu{
+.vertical-menu__div:hover .vertical-menu{
     border-radius: 7px 7px 0px 0;
+    box-shadow: none;
 }
 
-.transform-div button:hover {
+button:hover {
     background-color: #EDAE49;
     box-shadow: 0px 0px 2px #EDAE49;
 }
