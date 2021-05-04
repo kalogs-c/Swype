@@ -39,18 +39,6 @@ body {
     height: 100vh;
 }
 
-.transform-div {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.transform-div h2 {
-    text-align: center;
-    margin: 30px 0;
-    color: #FF3366;
-    font-size: 2rem;
-}
-
 .textarea {
     min-height: 300px;
     min-width: 550px;
@@ -60,7 +48,6 @@ body {
     padding: 20px;
     background-color: #F6F7F8;
     border: 1px solid #EDAE49;
-    box-shadow: 3px 2px 1px #EDAE49;
     font-size: 1.2rem;
 }
 
@@ -68,8 +55,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    min-width: 550px;
-    max-width: 900px;
+    width: 550px;
 }
 
 button {
@@ -103,4 +89,34 @@ button {
 button:hover {
     background-color: #EDAE49;
     box-shadow: 0px 0px 2px #EDAE49;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+
+    .header div {
+        justify-content: center;
+    }
+
+    .textarea {
+        width: 0;
+        min-width: 250px;
+    }
+
+    .button-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    .content-area {
+        width: 100vw;
+    }
 }
