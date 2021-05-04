@@ -100,8 +100,6 @@ button {
     cursor: pointer;
 }
 
-
-
 button:hover {
     background-color: #EDAE49;
     box-shadow: 0px 0px 2px #EDAE49;
