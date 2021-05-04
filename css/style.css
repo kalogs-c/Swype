@@ -41,8 +41,7 @@ body {
 
 .textarea {
     min-height: 300px;
-    min-width: 550px;
-    max-width: 900px;
+    width: 550px;
     border-radius: 10px;
     margin: 30px auto;
     padding: 20px;
