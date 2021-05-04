@@ -5,11 +5,14 @@
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    outline: none;
 }
 
 body {
     background-color: #FFFFFF;
     height: 100vh;
+    padding: 0 50px;
 }
 
 .header {
@@ -28,6 +31,14 @@ body {
     text-decoration: underline;
 }
 
+.content-area {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
 .transform-div {
     max-width: 1100px;
     margin: 0 auto;
@@ -40,27 +51,12 @@ body {
     font-size: 2rem;
 }
 
-.transform-div div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 110px;
-    grid-template-areas:
-        "text-area1"
-        "button" 
-    ;
-    gap: 25px;
-    justify-items: center;
-}
-
-.textarea1 {
-    grid-area: text-area1;
-}
-
 .textarea {
     min-height: 300px;
     min-width: 550px;
     max-width: 900px;
     border-radius: 10px;
+    margin: 30px auto;
     padding: 20px;
     background-color: #F6F7F8;
     border: 1px solid #EDAE49;
@@ -68,23 +64,45 @@ body {
     font-size: 1.2rem;
 }
 
-.transform-div button {
-    grid-area: button;
-    width: 250px;
-    height: 60px;
-    justify-self: center;
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    background-color: #FF3366;
-    font-size: 1.6rem;
-    font-weight: bolder;
-    box-shadow: 8.5px 8.5px 5px #EDAE49;
-    transition: 0.4s all ease;
-    margin-top: 25px;
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-width: 550px;
+    max-width: 900px;
 }
 
-.transform-div button:hover {
+button {
+    width: 250px;
+    height: 60px;
+    justify-self: flex-end;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #FF3366;
+    box-shadow: 8.5px 8.5px 5px #EDAE49;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    transition: 0.3s all ease;
+}
+
+#vertical-menu__select {
+    max-width: 270px;
+    height: 60px;
+    border: none;
+    border-radius: 7px;
+    background-color: #F6F7F8;
+    color: #FF3366;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+
+
+button:hover {
     background-color: #EDAE49;
     box-shadow: 0px 0px 2px #EDAE49;
 }

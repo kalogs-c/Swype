@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,46 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Swipe!</title>
 </head>
+
 <body>
     <section class="main" id="main">
         <header class="header">
             <div>
-                <a href="#"><h1>Swype!</h1></a>
+                <a href="#">
+                    <h1>Swype!</h1>
+                </a>
             </div>
         </header>
 
-        <div class="transform-div">
+        <div class="content-area">
             <h2>Transformar texto</h2>
-
-            <div>
-                <textarea class="textarea1 textarea" placeholder="Escreva aqui..."></textarea>
-                <button onclick="show_reverse()">Swype!</button>
+            <textarea class="textarea1 textarea" placeholder="Escreva aqui..."></textarea>
+            <div class="button-div">
+                <!--
+                <div class="vertical-menu__div">
+                    <div class="vertical-menu">
+                        <a href="#" class="select">Ao contrário</a>
+                    </div>
+                    <div class="dropdown-list">
+                        <div class="dropdown-list__item">Maiúsculo</div>
+                        <div class="dropdown-list__item">Minúsculo</div>
+                        <div class="dropdown-list__item">Primeiro em maiúsculo</div>
+                    </div>
+                </div>  
+                -->
+                <select name="vertical-menu" id="vertical-menu__select">
+                    <option selected value="reverse">Ao contrário</option>
+                    <option value="upper">Maiúsculo</option>
+                    <option value="lower">Minúsculo</option>
+                    <option value="first_U">Primeiro em maiúsculo</option>
+                </select>
+                        
+                <button onclick="show_result()">Swype!</button>
             </div>
-        </div>
+            
+        </div>        
     </section>
 </body>
 <script src="script/script.js"></script>
+
 </html>
