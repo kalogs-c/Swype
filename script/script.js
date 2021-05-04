@@ -14,7 +14,7 @@ function toLower(content) {
 }
 
 function toCapitalize(content) {
-    return content.charAt(0).toUpperCase() + content.slice(1);
+    return content.charAt(0).toUpperCase() + content.slice(1).toLowerCase();
 }
 
 function show_reverse() {

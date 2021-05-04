@@ -36,6 +36,7 @@ body {
     flex-direction: column;
     justify-items: center;
     text-align: center;
+    height: 100vh;
 }
 
 .transform-div {
